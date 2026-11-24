@@ -90,6 +90,60 @@
         "about": {
           "@id": "https://studio-flexarion.github.io/#organisation"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://studio-flexarion.github.io/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qu'est-ce que Flexarion ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Flexarion est un studio de développement de jeux vidéo indépendant, spécialisé dans la science-fiction. Fondé en 2023 à Aix-en-Provence, ce studio indé de six personnes développe son premier jeu, Maestral, un jeu d'exploration à la voile solaire."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Où se trouve le studio Flexarion ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le studio Flexarion est installé à Aix-en-Provence (13100), dans les Bouches-du-Rhône, en Provence-Alpes-Côte d'Azur. L'équipe travaille dans un ancien atelier d'imprimeur, à deux pas du cours Mirabeau."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels jeux vidéo développe Flexarion ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le premier jeu de Flexarion s'appelle Maestral : un jeu de science-fiction sans combat, où l'on pilote un voilier solaire pour rallumer les fanaux d'un archipel orbital. Une démo publique est prévue au printemps 2027, puis un accès anticipé sur PC."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "D'où vient le nom Flexarion ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Flexarion associe « flex », du latin flectere (fléchir), et Arion, le poète grec que la légende dit sauvé de la noyade par un dauphin charmé par son chant. Un studio souple, des récits qui portent."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment suivre l'actualité du studio Flexarion ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L'équipe publie chaque mois un devlog qui raconte les coulisses du développement de Maestral. Vous pouvez aussi vous abonner au flux RSS des devlogs ou écrire au studio depuis la page contact."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Le studio Flexarion recrute-t-il ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Flexarion accueille régulièrement des stagiaires des écoles d'art et d'informatique du pays d'Aix. Pour une candidature ou une collaboration, écrivez à l'équipe depuis la page contact."
+            }
+          }
+        ]
       }
     ]
   }
@@ -238,6 +292,20 @@
             <li class="reveal">
               <article class="card card--link post-card">
                 <div class="post-card__media">
+                  <img src="assets/img/devlog-bande-son-maestral.svg" alt="La bande-son de Maestral&nbsp;: la musique du galoubet s’efface quand le vent forcit, tandis que l’onde du chant de la coque de la Cigale monte en fréquence" width="1200" height="630" loading="lazy" decoding="async">
+                </div>
+                <div class="post-card__body">
+                  <ul class="tags" aria-label="Thèmes"><li class="tag tag--ocre">Son</li><li class="tag">Musique</li></ul>
+                  <h3><a href="devlog/bande-son-maestral-enregistrer-le-mistral.html">Devlog 04 — La bande-son de Maestral&nbsp;: enregistrer le mistral pour faire chanter la Cigale</a></h3>
+                  <p>Six heures de mistral enregistrées autour d’Aix, un galoubet et une coque qui chante avant la rafale&nbsp;: comment le son de Maestral suit le vent.</p>
+                  <p class="post-meta hud"><time datetime="2026-11-24">24 novembre 2026</time><span>7 min de lecture</span></p>
+                  <span class="link-arrow" aria-hidden="true">Lire le devlog</span>
+                </div>
+              </article>
+            </li>
+            <li class="reveal">
+              <article class="card card--link post-card">
+                <div class="post-card__media">
                   <img src="assets/img/devlog-playtest-demo.svg" alt="Infographie du premier playtest de Maestral&nbsp;: 124 joueurs, dont 71 % rallument le premier fanal sans aide, et une courbe des durées de session" width="1200" height="630" loading="lazy" decoding="async">
                 </div>
                 <div class="post-card__body">
@@ -263,23 +331,45 @@
                 </div>
               </article>
             </li>
-            <li class="reveal">
-              <article class="card card--link post-card">
-                <div class="post-card__media">
-                  <img src="assets/img/devlog-simulation-vent-solaire.svg" alt="Schéma technique&nbsp;: un champ de flèches représente le vent solaire, et un diagramme montre la poussée exercée sur une voile inclinée" width="1200" height="630" loading="lazy" decoding="async">
-                </div>
-                <div class="post-card__body">
-                  <ul class="tags" aria-label="Thèmes"><li class="tag tag--ocre">Programmation</li><li class="tag">Game design</li></ul>
-                  <h3><a href="devlog/simuler-le-vent-solaire.html">Devlog 01 — Simuler le vent solaire&nbsp;: comment la Cigale a appris à tirer des bords</a></h3>
-                  <p>Champ de vecteurs, poussée en cos² et «&nbsp;quille magnétique&nbsp;»&nbsp;: les dessous de la simulation de vent au cœur de Maestral.</p>
-                  <p class="post-meta hud"><time datetime="2026-09-18">18 septembre 2026</time><span>7 min de lecture</span></p>
-                  <span class="link-arrow" aria-hidden="true">Lire le devlog</span>
-                </div>
-              </article>
-            </li>
           </ul>
         <div class="actions">
           <a class="btn" href="devlog/index.html">Tous les devlogs <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Questions fréquentes sur le studio -->
+    <section class="section section--tight" id="faq" aria-labelledby="titre-faq">
+      <div class="container container--narrow">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>04</span> FAQ</p>
+          <h2 id="titre-faq">Questions fréquentes sur Flexarion</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary><h3>Qu’est-ce que Flexarion&nbsp;?</h3></summary>
+            <p>Flexarion est un studio de développement de jeux vidéo indépendant, spécialisé dans la science-fiction. Fondé en 2023 à Aix-en-Provence, ce studio indé de six personnes développe son premier jeu, Maestral, un jeu d’exploration à la voile solaire.</p>
+          </details>
+          <details>
+            <summary><h3>Où se trouve le studio Flexarion&nbsp;?</h3></summary>
+            <p>Le studio Flexarion est installé à Aix-en-Provence (13100), dans les Bouches-du-Rhône, en Provence-Alpes-Côte d’Azur. L’équipe travaille dans un ancien atelier d’imprimeur, à deux pas du cours Mirabeau.</p>
+          </details>
+          <details>
+            <summary><h3>Quels jeux vidéo développe Flexarion&nbsp;?</h3></summary>
+            <p>Le premier jeu de Flexarion s’appelle Maestral&nbsp;: un jeu de science-fiction sans combat, où l’on pilote un voilier solaire pour rallumer les fanaux d’un archipel orbital. Une démo publique est prévue au printemps 2027, puis un accès anticipé sur PC. <a href="maestral.html">Découvrir Maestral</a>.</p>
+          </details>
+          <details>
+            <summary><h3>D’où vient le nom Flexarion&nbsp;?</h3></summary>
+            <p>Flexarion associe «&nbsp;flex&nbsp;», du latin flectere (fléchir), et Arion, le poète grec que la légende dit sauvé de la noyade par un dauphin charmé par son chant. Un studio souple, des récits qui portent. <a href="studio.html">Lire l’histoire du studio</a>.</p>
+          </details>
+          <details>
+            <summary><h3>Comment suivre l’actualité du studio Flexarion&nbsp;?</h3></summary>
+            <p>L’équipe publie chaque mois un devlog qui raconte les coulisses du développement de Maestral. Vous pouvez aussi vous abonner au flux RSS des devlogs ou écrire au studio depuis la page contact. <a href="devlog/index.html">Lire les devlogs</a>.</p>
+          </details>
+          <details>
+            <summary><h3>Le studio Flexarion recrute-t-il&nbsp;?</h3></summary>
+            <p>Flexarion accueille régulièrement des stagiaires des écoles d’art et d’informatique du pays d’Aix. Pour une candidature ou une collaboration, écrivez à l’équipe depuis la page contact. <a href="contact.html">Contacter Flexarion</a>.</p>
+          </details>
         </div>
       </div>
     </section>

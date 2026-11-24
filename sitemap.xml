@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://studio-flexarion.github.io/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://studio-flexarion.github.io/studio.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://studio-flexarion.github.io/maestral.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://studio-flexarion.github.io/devlog/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://studio-flexarion.github.io/contact.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -38,6 +38,11 @@
   <url>
     <loc>https://studio-flexarion.github.io/devlog/simuler-le-vent-solaire.html</loc>
     <lastmod>2026-09-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://studio-flexarion.github.io/devlog/bande-son-maestral-enregistrer-le-mistral.html</loc>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>

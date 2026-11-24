@@ -6,7 +6,15 @@
     <atom:link href="https://studio-flexarion.github.io/devlog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Le journal de développement de Maestral, par le studio indépendant Flexarion (Aix-en-Provence).</description>
     <language>fr-FR</language>
-    <lastBuildDate>Fri, 06 Nov 2026 09:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 09:00:00 +0100</lastBuildDate>
+    <item>
+      <title>Devlog 04 — La bande-son de Maestral : enregistrer le mistral pour faire chanter la Cigale</title>
+      <link>https://studio-flexarion.github.io/devlog/bande-son-maestral-enregistrer-le-mistral.html</link>
+      <guid isPermaLink="true">https://studio-flexarion.github.io/devlog/bande-son-maestral-enregistrer-le-mistral.html</guid>
+      <pubDate>Tue, 24 Nov 2026 09:00:00 +0100</pubDate>
+      <dc:creator>Théo Vannier</dc:creator>
+      <description>Six heures de mistral enregistrées autour d’Aix, un galoubet et une coque qui chante avant la rafale : comment le son de Maestral suit le vent.</description>
+    </item>
     <item>
       <title>Devlog 03 — Première démo de Maestral : ce que 124 joueurs nous ont appris</title>
       <link>https://studio-flexarion.github.io/devlog/premiere-demo-maestral-bilan-playtest.html</link>
