@@ -1101,7 +1101,9 @@ def main():
     ecrire("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
            + "".join(f"  <url><loc>{url(p)}</loc><lastmod>{d}</lastmod><priority>{pr}</priority></url>\n" for p, pr, d in pages)
            + "</urlset>\n")
-    ecrire("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {url('sitemap.xml')}\n")
+    # Version texte du sitemap (une URL par ligne), acceptée par Google en secours
+    ecrire("sitemap.txt", "".join(url(p) + "\n" for p, _, _ in pages))
+    ecrire("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {url('sitemap.xml')}\nSitemap: {url('sitemap.txt')}\n")
 
     items = "".join(f"""  <item>
     <title>{escape(f"Devlog {p['num']} — {p['titre']}")}</title>
