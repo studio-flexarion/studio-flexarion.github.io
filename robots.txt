@@ -1,4 +1,3 @@
-# Flexarion — tout le site est ouvert à l'exploration
 User-agent: *
 Allow: /
 

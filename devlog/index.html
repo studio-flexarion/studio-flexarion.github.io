@@ -1,298 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Devlogs Flexarion — Journal de développement de Maestral</title>
-  <meta name="description" content="Le blog de devlogs de Flexarion&nbsp;: suivez le développement de Maestral, de la simulation du vent solaire à la direction artistique, raconté par l’équipe.">
-  <link rel="canonical" href="https://studio-flexarion.github.io/devlog/">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="author" content="Flexarion">
-  <meta name="theme-color" content="#0c0a13">
-
-  <!-- Partage sur les réseaux sociaux (Open Graph) -->
-  <meta property="og:site_name" content="Flexarion">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Devlogs Flexarion — Journal de développement de Maestral">
-  <meta property="og:description" content="Le blog de devlogs de Flexarion&nbsp;: suivez le développement de Maestral, de la simulation du vent solaire à la direction artistique, raconté par l’équipe.">
-  <meta property="og:url" content="https://studio-flexarion.github.io/devlog/">
-  <meta property="og:image" content="https://studio-flexarion.github.io/assets/img/og-flexarion.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Flexarion, studio de jeux vidéo indépendant de science-fiction à Aix-en-Provence">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Icônes et flux -->
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-  <link rel="manifest" href="../site.webmanifest">
-  <link rel="alternate" type="application/rss+xml" title="Devlogs Flexarion" href="../devlog/feed.xml">
-
-  <!-- Polices et styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Manrope:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap">
-  <link rel="stylesheet" href="../assets/css/style.css">
-
-  <!-- Données structurées (schema.org) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Blog",
-        "@id": "https://studio-flexarion.github.io/devlog/#blog",
-        "url": "https://studio-flexarion.github.io/devlog/",
-        "name": "Devlogs Flexarion",
-        "description": "Le blog de devlogs de Flexarion : suivez le développement de Maestral, de la simulation du vent solaire à la direction artistique, raconté par l'équipe.",
-        "inLanguage": "fr-FR",
-        "publisher": {
-          "@id": "https://studio-flexarion.github.io/#organisation"
-        },
-        "blogPost": [
-          {
-            "@type": "BlogPosting",
-            "headline": "La bande-son de Maestral : enregistrer le mistral pour faire chanter la Cigale",
-            "url": "https://studio-flexarion.github.io/devlog/bande-son-maestral-enregistrer-le-mistral.html",
-            "datePublished": "2026-11-24",
-            "author": {
-              "@type": "Person",
-              "name": "Théo Vannier"
-            }
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": "Première démo de Maestral : ce que 124 joueurs nous ont appris",
-            "url": "https://studio-flexarion.github.io/devlog/premiere-demo-maestral-bilan-playtest.html",
-            "datePublished": "2026-11-06",
-            "author": {
-              "@type": "Person",
-              "name": "Lina Marchetti"
-            }
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": "Direction artistique : peindre la science-fiction aux couleurs de la Provence",
-            "url": "https://studio-flexarion.github.io/devlog/direction-artistique-science-fiction-provence.html",
-            "datePublished": "2026-10-16",
-            "author": {
-              "@type": "Person",
-              "name": "Soraya Khelifi"
-            }
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": "Simuler le vent solaire : comment la Cigale a appris à tirer des bords",
-            "url": "https://studio-flexarion.github.io/devlog/simuler-le-vent-solaire.html",
-            "datePublished": "2026-09-18",
-            "author": {
-              "@type": "Person",
-              "name": "Idriss Benhamou"
-            }
-          }
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Accueil",
-            "item": "https://studio-flexarion.github.io/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Devlogs",
-            "item": "https://studio-flexarion.github.io/devlog/"
-          }
-        ]
-      }
-    ]
-  }
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devlog Flexarion — Journal de développement du souls-like de science-fiction</title>
+<meta name="description" content="Le devlog du studio Flexarion : coulisses du développement de Flexarion, souls-like de samouraï dans l&#x27;espace. Système de combat, direction artistique et univers.">
+<link rel="canonical" href="https://studio-flexarion.github.io/devlog/index.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Flexarion">
+<meta name="theme-color" content="#08070b">
+<meta property="og:site_name" content="Flexarion">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Devlog Flexarion — Journal de développement du souls-like de science-fiction">
+<meta property="og:description" content="Le devlog du studio Flexarion : coulisses du développement de Flexarion, souls-like de samouraï dans l&#x27;espace. Système de combat, direction artistique et univers.">
+<meta property="og:url" content="https://studio-flexarion.github.io/devlog/index.html">
+<meta property="og:image" content="https://studio-flexarion.github.io/assets/img/og-flexarion.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Flexarion, souls-like de science-fiction où l&#x27;on incarne un ronin dans l&#x27;espace">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Devlog Flexarion — Journal de développement du souls-like de science-fiction">
+<meta name="twitter:description" content="Le devlog du studio Flexarion : coulisses du développement de Flexarion, souls-like de samouraï dans l&#x27;espace. Système de combat, direction artistique et univers.">
+<meta name="twitter:image" content="https://studio-flexarion.github.io/assets/img/og-flexarion.png">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Devlog Flexarion" href="https://studio-flexarion.github.io/devlog/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Shippori+Mincho:wght@800&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Blog","@id":"https://studio-flexarion.github.io/devlog/#blog","url":"https://studio-flexarion.github.io/devlog/index.html","name":"Devlog Flexarion","description":"Le journal de développement du jeu Flexarion, souls-like de science-fiction.","inLanguage":"fr-FR","publisher":{"@id":"https://studio-flexarion.github.io/#organisation"},"blogPost":[{"@type":"BlogPosting","headline":"Direction artistique : l'encre, l'or et le vide","url":"https://studio-flexarion.github.io/devlog/direction-artistique-encre-or-et-vide.html","datePublished":"2026-11-24","author":{"@type":"Person","name":"Soraya Khelifi"}},{"@type":"BlogPosting","headline":"Parade, posture et apesanteur : le système de combat","url":"https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html","datePublished":"2026-11-05","author":{"@type":"Person","name":"Clément Astier"}},{"@type":"BlogPosting","headline":"Un ronin dans l'espace : pourquoi un souls-like de science-fiction","url":"https://studio-flexarion.github.io/devlog/un-ronin-dans-l-espace-souls-like-science-fiction.html","datePublished":"2026-10-12","author":{"@type":"Person","name":"Maëlle Roux"}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://studio-flexarion.github.io/"},{"@type":"ListItem","position":2,"name":"Devlog","item":"https://studio-flexarion.github.io/devlog/index.html"}]}]}</script>
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="entete">
+  <div class="container entete__in">
+    <a class="marque" href="../index.html" aria-label="Flexarion, retour à l'accueil">
+      <img src="../assets/img/flexarion-logo.svg" alt="" width="40" height="40"><span>FLEXARION</span>
+    </a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu"><span></span><b class="sr-only">Menu</b></button>
+    <nav class="nav" id="menu" aria-label="Navigation principale"><ul><li><a href="../index.html">Accueil</a></li><li><a href="../jeu.html">Le jeu</a></li><li><a href="../studio.html">Le studio</a></li><li><a href="../devlog/index.html" aria-current="page">Devlog</a></li><li><a href="../contact.html">Contact &amp; presse</a></li></ul></nav>
+  </div>
+</header>
+<main id="contenu">
 
-  <header class="site-header" data-header>
-    <div class="container site-header__inner">
-      <a class="brand" href="../index.html" aria-label="Flexarion — retour à l’accueil">
-        <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><defs><linearGradient id="degrade-logo" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#d9643a"/><stop offset=".55" stop-color="#f0a63c"/><stop offset="1" stop-color="#ffe2a8"/></linearGradient></defs><circle cx="8.5" cy="9.5" r="3.6" fill="#ffc670"/><path d="M17 33C14 20 21 8 36 4C31 13 30 23 34 33Z" fill="url(#degrade-logo)"/><path d="M9 21.5H14M5 27H13" stroke="#f3eadb" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round"/><path d="M4 34H37" stroke="#f3eadb" stroke-width="2.4" stroke-linecap="round"/></svg>
-        <span class="brand__name">Flexarion</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
-        <span class="sr-only">Ouvrir le menu</span>
-        <span class="nav-toggle__bars" aria-hidden="true"></span>
-      </button>
-      <nav class="site-nav" id="menu-principal" aria-label="Navigation principale">
-        <ul>
-          <li><a href="../index.html">Accueil</a></li>
-          <li><a href="../studio.html">Le studio</a></li>
-          <li><a href="../maestral.html">Maestral</a></li>
-          <li><a href="../devlog/index.html" aria-current="page">Devlogs</a></li>
-          <li><a href="../contact.html">Contact &amp; presse</a></li>
-        </ul>
-        <a class="btn btn--primary btn--small" href="../maestral.html#suivre">Suivre Maestral</a>
+<section class="heros-page" aria-labelledby="titre">
+  <span class="heros-page__kanji" aria-hidden="true">日誌</span>
+  <div class="container">
+    <nav class="ariane revele" aria-label="Fil d'Ariane"><ol><li><a href="../index.html">Accueil</a></li><li aria-current="page">Devlog</li></ol></nav>
+    <p class="heros__sur revele">Journal de développement</p>
+    <h1 class="revele" id="titre">Le devlog de Flexarion</h1>
+    <p class="chapeau revele">Combat, direction artistique, univers : chaque mois, l'équipe du studio raconte la fabrication de son souls-like de science-fiction, sans filtre.</p>
+  </div>
+</section>
+<section class="section" aria-label="Articles">
+  <div class="container"><div class="grille grille--3"><article class="carte revele" style="--delai:0.0s"><a class="billet" href="../devlog/direction-artistique-encre-or-et-vide.html">
+  <div class="billet__img"><img src="../assets/img/flexarion-palette-encre-et-braise.svg" alt="La palette encre et braise de Flexarion : six bandes de couleur à côté d&#x27;un ensō peint à l&#x27;encre et d&#x27;un ronin" width="1200" height="630" loading="lazy"></div>
+  <p class="meta"><span>Devlog 03</span><time datetime="2026-11-24">24 novembre 2026</time></p>
+  <h2>Direction artistique : l&#x27;encre, l&#x27;or et le vide</h2>
+  <p>Six couleurs, des silhouettes lisibles à dix mètres et un soleil qui ne brille plus : les règles qui donnent son identité visuelle au jeu Flexarion.</p>
+  <span class="lire">Lire le devlog →</span>
+</a></article><article class="carte revele" style="--delai:0.1s"><a class="billet" href="../devlog/parade-posture-apesanteur-systeme-de-combat.html">
+  <div class="billet__img"><img src="../assets/img/flexarion-duel-apesanteur-katana.svg" alt="Deux samouraïs s&#x27;affrontent au katana en apesanteur au milieu de débris, tranchés par un arc de lumière" width="1200" height="700" loading="lazy"></div>
+  <p class="meta"><span>Devlog 02</span><time datetime="2026-11-05">5 novembre 2026</time></p>
+  <h2>Parade, posture et apesanteur : le système de combat</h2>
+  <p>Dix images pour parer, une barre de posture à briser et des combats sans sol ni plafond : comment nous avons conçu les duels au katana de Flexarion.</p>
+  <span class="lire">Lire le devlog →</span>
+</a></article><article class="carte revele" style="--delai:0.2s"><a class="billet" href="../devlog/un-ronin-dans-l-espace-souls-like-science-fiction.html">
+  <div class="billet__img"><img src="../assets/img/flexarion-ronin-soleil-noir.svg" alt="Un ronin au chapeau de paille, katana à la main, face à une éclipse dorée et à un torii brisé" width="1600" height="900" loading="lazy"></div>
+  <p class="meta"><span>Devlog 01</span><time datetime="2026-10-12">12 octobre 2026</time></p>
+  <h2>Un ronin dans l&#x27;espace : pourquoi un souls-like de science-fiction</h2>
+  <p>Un croquis à l&#x27;encre, une éclipse au-dessus de la Sainte-Victoire et une question : que devient l&#x27;honneur d&#x27;un samouraï quand son soleil s&#x27;éteint ?</p>
+  <span class="lire">Lire le devlog →</span>
+</a></article></div></div>
+</section>
+<section class="section--serre" style="padding-bottom:110px">
+  <div class="container"><div class="appel revele">
+    <h2>Ne manquez aucun devlog</h2>
+    <p>Abonnez-vous au flux RSS ou proposez-nous un sujet : nous y répondrons dans un prochain article.</p>
+    <div class="actions"><a class="btn btn--plein" href="feed.xml">Flux RSS</a><a class="btn" href="../contact.html">Proposer un sujet</a></div>
+  </div></div>
+</section>
+</main>
+<footer class="pied">
+  <div class="container">
+    <div class="pied__grille">
+      <div>
+        <a class="marque" href="../index.html"><img src="../assets/img/flexarion-logo.svg" alt="" width="40" height="40"><span>FLEXARION</span></a>
+        <p style="margin-top:18px"><strong>Flexarion</strong> est un studio de jeux vidéo indépendant de science-fiction, installé à Aix-en-Provence. Il développe Flexarion, un souls-like où l'on incarne un ronin dans l'espace.</p>
+      </div>
+      <nav aria-label="Plan du site">
+        <h2>Explorer</h2>
+        <ul><li><a href="../jeu.html">Le jeu Flexarion</a></li><li><a href="../studio.html">Le studio</a></li><li><a href="../devlog/index.html">Devlog</a></li><li><a href="../contact.html">Contact &amp; presse</a></li></ul>
       </nav>
-    </div>
-  </header>
-
-  <main id="contenu">
-    <!-- En-tête du blog -->
-    <section class="page-hero page-hero--wide" aria-labelledby="titre-devlogs">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Fil d’Ariane">
-          <ol>
-            <li><a href="../index.html">Accueil</a></li>
-            <li aria-current="page">Devlogs</li>
-          </ol>
-        </nav>
-        <p class="hud">Journal de développement · un article par mois</p>
-        <h1 id="titre-devlogs">Devlogs Flexarion&nbsp;: le journal de développement de Maestral</h1>
-        <p class="lead">Chaque mois, l’équipe de Flexarion ouvre les portes de l’atelier&nbsp;: code, direction artistique, game design, playtests. Sans filtre, ratés compris.</p>
-        <div class="actions">
-          <a class="btn btn--small" href="feed.xml">S’abonner au flux RSS</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Liste des articles -->
-    <section class="section section--tight" aria-label="Tous les devlogs">
-      <div class="container">
-        <ul class="posts posts--featured">
-            <li class="reveal">
-              <article class="card card--link post-card">
-                <div class="post-card__media">
-                  <img src="../assets/img/devlog-bande-son-maestral.svg" alt="La bande-son de Maestral&nbsp;: la musique du galoubet s’efface quand le vent forcit, tandis que l’onde du chant de la coque de la Cigale monte en fréquence" width="1200" height="630" decoding="async">
-                </div>
-                <div class="post-card__body">
-                  <ul class="tags" aria-label="Thèmes"><li class="tag tag--ocre">Son</li><li class="tag">Musique</li></ul>
-                  <h2><a href="../devlog/bande-son-maestral-enregistrer-le-mistral.html">Devlog 04 — La bande-son de Maestral&nbsp;: enregistrer le mistral pour faire chanter la Cigale</a></h2>
-                  <p>Six heures de mistral enregistrées autour d’Aix, un galoubet et une coque qui chante avant la rafale&nbsp;: comment le son de Maestral suit le vent.</p>
-                  <p class="post-meta hud"><time datetime="2026-11-24">24 novembre 2026</time><span>7 min de lecture</span></p>
-                  <span class="link-arrow" aria-hidden="true">Lire le devlog</span>
-                </div>
-              </article>
-            </li>
-            <li class="reveal">
-              <article class="card card--link post-card">
-                <div class="post-card__media">
-                  <img src="../assets/img/devlog-playtest-demo.svg" alt="Infographie du premier playtest de Maestral&nbsp;: 124 joueurs, dont 71 % rallument le premier fanal sans aide, et une courbe des durées de session" width="1200" height="630" loading="lazy" decoding="async">
-                </div>
-                <div class="post-card__body">
-                  <ul class="tags" aria-label="Thèmes"><li class="tag tag--ocre">Playtest</li><li class="tag">Production</li></ul>
-                  <h2><a href="../devlog/premiere-demo-maestral-bilan-playtest.html">Devlog 03 — Première démo de Maestral&nbsp;: ce que 124 joueurs nous ont appris</a></h2>
-                  <p>Dix jours de playtest, 124 joueurs, un rocher maudit et trois leçons de design&nbsp;: le bilan sans fard de notre première démo.</p>
-                  <p class="post-meta hud"><time datetime="2026-11-06">6 novembre 2026</time><span>6 min de lecture</span></p>
-                  <span class="link-arrow" aria-hidden="true">Lire le devlog</span>
-                </div>
-              </article>
-            </li>
-            <li class="reveal">
-              <article class="card card--link post-card">
-                <div class="post-card__media">
-                  <img src="../assets/img/devlog-direction-artistique-palette.svg" alt="Le nuancier de Maestral&nbsp;: cinq bandes de couleur, nuit, calcaire, ocre, terre cuite et lavande, à côté d’une montagne peinte en facettes" width="1200" height="630" loading="lazy" decoding="async">
-                </div>
-                <div class="post-card__body">
-                  <ul class="tags" aria-label="Thèmes"><li class="tag tag--ocre">Direction artistique</li><li class="tag">Univers</li></ul>
-                  <h2><a href="../devlog/direction-artistique-science-fiction-provence.html">Devlog 02 — Direction artistique&nbsp;: peindre la science-fiction aux couleurs de la Provence</a></h2>
-                  <p>Comment nous avons remplacé le néon cyan de la science-fiction par l’ocre de Roussillon, le calcaire de la Sainte-Victoire et la lavande.</p>
-                  <p class="post-meta hud"><time datetime="2026-10-16">16 octobre 2026</time><span>6 min de lecture</span></p>
-                  <span class="link-arrow" aria-hidden="true">Lire le devlog</span>
-                </div>
-              </article>
-            </li>
-            <li class="reveal">
-              <article class="card card--link post-card">
-                <div class="post-card__media">
-                  <img src="../assets/img/devlog-simulation-vent-solaire.svg" alt="Schéma technique&nbsp;: un champ de flèches représente le vent solaire, et un diagramme montre la poussée exercée sur une voile inclinée" width="1200" height="630" loading="lazy" decoding="async">
-                </div>
-                <div class="post-card__body">
-                  <ul class="tags" aria-label="Thèmes"><li class="tag tag--ocre">Programmation</li><li class="tag">Game design</li></ul>
-                  <h2><a href="../devlog/simuler-le-vent-solaire.html">Devlog 01 — Simuler le vent solaire&nbsp;: comment la Cigale a appris à tirer des bords</a></h2>
-                  <p>Champ de vecteurs, poussée en cos² et «&nbsp;quille magnétique&nbsp;»&nbsp;: les dessous de la simulation de vent au cœur de Maestral.</p>
-                  <p class="post-meta hud"><time datetime="2026-09-18">18 septembre 2026</time><span>7 min de lecture</span></p>
-                  <span class="link-arrow" aria-hidden="true">Lire le devlog</span>
-                </div>
-              </article>
-            </li>
-          </ul>
-      </div>
-    </section>
-
-    <!-- Pourquoi un journal -->
-    <section class="section section--panel" aria-labelledby="titre-pourquoi">
-      <div class="container split">
-        <div class="reveal">
-          <p class="eyebrow">Notre démarche</p>
-          <h2 id="titre-pourquoi">Pourquoi tenir un journal de développement&nbsp;?</h2>
-          <p>Un jeu vidéo indépendant se fabrique pendant des années, souvent dans le silence. Nous avons choisi l’inverse&nbsp;: montrer Maestral pendant qu’il se construit, avec ses impasses et ses bonnes surprises.</p>
-          <p>Ces devlogs nous obligent à expliquer nos choix, donc à mieux les faire. Ils permettent aussi aux joueurs, aux étudiants et aux autres studios de voir comment travaille une petite équipe de science-fiction à Aix-en-Provence.</p>
-        </div>
-        <div class="grid reveal">
-          <article class="card">
-            <h3>Au sommaire des prochains devlogs</h3>
-            <p>L’annotation libre de la carte de bord, les abris et l’ombre des îlots, l’intelligence des santons, et la préparation de la démo publique du printemps 2027.</p>
-          </article>
-          <article class="card">
-            <h3>Une question pour l’équipe&nbsp;?</h3>
-            <p>Proposez un sujet de devlog ou posez votre question&nbsp;: nous y répondrons dans un prochain article.</p>
-            <p><a class="link-arrow" href="../contact.html">Écrire à Flexarion</a></p>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="site-footer__grid">
-        <div class="site-footer__brand">
-          <a class="brand" href="../index.html" aria-label="Flexarion — retour à l’accueil">
-            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><defs><linearGradient id="degrade-logo-pied" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#d9643a"/><stop offset=".55" stop-color="#f0a63c"/><stop offset="1" stop-color="#ffe2a8"/></linearGradient></defs><circle cx="8.5" cy="9.5" r="3.6" fill="#ffc670"/><path d="M17 33C14 20 21 8 36 4C31 13 30 23 34 33Z" fill="url(#degrade-logo-pied)"/><path d="M9 21.5H14M5 27H13" stroke="#f3eadb" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round"/><path d="M4 34H37" stroke="#f3eadb" stroke-width="2.4" stroke-linecap="round"/></svg>
-            <span class="brand__name">Flexarion</span>
-          </a>
-          <p>Studio de jeux vidéo indépendant de science-fiction, installé à Aix-en-Provence. Créateur de Maestral.</p>
-        </div>
-        <nav aria-label="Plan du site">
-          <h2>Explorer</h2>
-          <ul>
-              <li><a href="../index.html">Accueil</a></li>
-              <li><a href="../studio.html">Le studio</a></li>
-              <li><a href="../maestral.html">Maestral</a></li>
-              <li><a href="../devlog/index.html">Devlogs</a></li>
-              <li><a href="../contact.html">Contact &amp; presse</a></li>
-          </ul>
-        </nav>
-        <nav aria-label="Rubriques de Maestral">
-          <h2>Maestral</h2>
-          <ul>
-            <li><a href="../maestral.html#univers">L’univers du jeu</a></li>
-            <li><a href="../maestral.html#mecaniques">Les mécaniques</a></li>
-            <li><a href="../maestral.html#visuels">Visuels et ambiances</a></li>
-            <li><a href="../maestral.html#faq">Questions fréquentes</a></li>
-          </ul>
-        </nav>
-        <div>
-          <h2>Le studio</h2>
-          <address>
-            Flexarion<br>
-            13100 Aix-en-Provence<br>
-            Provence, France<br>
-            <a href="mailto:flexarioncontact@gmail.com">flexarioncontact@gmail.com</a>
-          </address>
-        </div>
-      </div>
-      <div class="site-footer__bottom">
-        <p>© 2026 Flexarion — studio fictif imaginé pour un concours du BUT Informatique d’Aix-en-Provence.</p>
-        <p><a href="../mentions-legales.html">Mentions légales</a> · <a href="../devlog/feed.xml">Flux RSS</a></p>
+      <nav aria-label="Le jeu">
+        <h2>Le jeu</h2>
+        <ul><li><a href="../jeu.html#univers">L'univers</a></li><li><a href="../jeu.html#mecaniques">Le combat</a></li><li><a href="../jeu.html#daimyos">Les Sept Daimyō</a></li><li><a href="../jeu.html#faq">FAQ du jeu</a></li></ul>
+      </nav>
+      <div>
+        <h2>Le studio</h2>
+        <address>Flexarion<br>13100 Aix-en-Provence<br>Provence, France<br><a href="mailto:flexarioncontact@gmail.com">flexarioncontact@gmail.com</a></address>
+        <ul style="margin-top:14px"><li><a href="../devlog/feed.xml">Flux RSS du devlog</a></li></ul>
       </div>
     </div>
-  </footer>
-
-  <script src="../assets/js/main.js" defer></script>
+    <div class="pied__bas">
+      <span>© 2026 Flexarion — studio fictif imaginé pour un projet du BUT Informatique d'Aix-en-Provence.</span>
+      <a href="../mentions-legales.html">Mentions légales</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js" defer></script>
 </body>
 </html>

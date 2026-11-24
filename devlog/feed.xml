@@ -1,43 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-    <title>Devlogs Flexarion</title>
-    <link>https://studio-flexarion.github.io/devlog/</link>
-    <atom:link href="https://studio-flexarion.github.io/devlog/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Le journal de développement de Maestral, par le studio indépendant Flexarion (Aix-en-Provence).</description>
-    <language>fr-FR</language>
-    <lastBuildDate>Tue, 24 Nov 2026 09:00:00 +0100</lastBuildDate>
-    <item>
-      <title>Devlog 04 — La bande-son de Maestral : enregistrer le mistral pour faire chanter la Cigale</title>
-      <link>https://studio-flexarion.github.io/devlog/bande-son-maestral-enregistrer-le-mistral.html</link>
-      <guid isPermaLink="true">https://studio-flexarion.github.io/devlog/bande-son-maestral-enregistrer-le-mistral.html</guid>
-      <pubDate>Tue, 24 Nov 2026 09:00:00 +0100</pubDate>
-      <dc:creator>Théo Vannier</dc:creator>
-      <description>Six heures de mistral enregistrées autour d’Aix, un galoubet et une coque qui chante avant la rafale : comment le son de Maestral suit le vent.</description>
-    </item>
-    <item>
-      <title>Devlog 03 — Première démo de Maestral : ce que 124 joueurs nous ont appris</title>
-      <link>https://studio-flexarion.github.io/devlog/premiere-demo-maestral-bilan-playtest.html</link>
-      <guid isPermaLink="true">https://studio-flexarion.github.io/devlog/premiere-demo-maestral-bilan-playtest.html</guid>
-      <pubDate>Fri, 06 Nov 2026 09:00:00 +0100</pubDate>
-      <dc:creator>Lina Marchetti</dc:creator>
-      <description>Dix jours de playtest, 124 joueurs, un rocher maudit et trois leçons de design : le bilan sans fard de notre première démo.</description>
-    </item>
-    <item>
-      <title>Devlog 02 — Direction artistique : peindre la science-fiction aux couleurs de la Provence</title>
-      <link>https://studio-flexarion.github.io/devlog/direction-artistique-science-fiction-provence.html</link>
-      <guid isPermaLink="true">https://studio-flexarion.github.io/devlog/direction-artistique-science-fiction-provence.html</guid>
-      <pubDate>Fri, 16 Oct 2026 09:00:00 +0100</pubDate>
-      <dc:creator>Soraya Khelifi</dc:creator>
-      <description>Comment nous avons remplacé le néon cyan de la science-fiction par l’ocre de Roussillon, le calcaire de la Sainte-Victoire et la lavande.</description>
-    </item>
-    <item>
-      <title>Devlog 01 — Simuler le vent solaire : comment la Cigale a appris à tirer des bords</title>
-      <link>https://studio-flexarion.github.io/devlog/simuler-le-vent-solaire.html</link>
-      <guid isPermaLink="true">https://studio-flexarion.github.io/devlog/simuler-le-vent-solaire.html</guid>
-      <pubDate>Fri, 18 Sep 2026 09:00:00 +0100</pubDate>
-      <dc:creator>Idriss Benhamou</dc:creator>
-      <description>Champ de vecteurs, poussée en cos² et « quille magnétique » : les dessous de la simulation de vent au cœur de Maestral.</description>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Devlog Flexarion</title>
+  <link>https://studio-flexarion.github.io/devlog/index.html</link>
+  <atom:link href="https://studio-flexarion.github.io/devlog/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Le journal de développement de Flexarion, souls-like de science-fiction du studio Flexarion (Aix-en-Provence).</description>
+  <language>fr-FR</language>
+  <item>
+    <title>Devlog 03 — Direction artistique : l&#x27;encre, l&#x27;or et le vide</title>
+    <link>https://studio-flexarion.github.io/devlog/direction-artistique-encre-or-et-vide.html</link>
+    <guid isPermaLink="true">https://studio-flexarion.github.io/devlog/direction-artistique-encre-or-et-vide.html</guid>
+    <pubDate>Tue, 24 Nov 2026 09:00:00 +0000</pubDate>
+    <description>Six couleurs, des silhouettes lisibles à dix mètres et un soleil qui ne brille plus : les règles qui donnent son identité visuelle au jeu Flexarion.</description>
+  </item>
+  <item>
+    <title>Devlog 02 — Parade, posture et apesanteur : le système de combat</title>
+    <link>https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html</link>
+    <guid isPermaLink="true">https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html</guid>
+    <pubDate>Thu, 05 Nov 2026 09:00:00 +0000</pubDate>
+    <description>Dix images pour parer, une barre de posture à briser et des combats sans sol ni plafond : comment nous avons conçu les duels au katana de Flexarion.</description>
+  </item>
+  <item>
+    <title>Devlog 01 — Un ronin dans l&#x27;espace : pourquoi un souls-like de science-fiction</title>
+    <link>https://studio-flexarion.github.io/devlog/un-ronin-dans-l-espace-souls-like-science-fiction.html</link>
+    <guid isPermaLink="true">https://studio-flexarion.github.io/devlog/un-ronin-dans-l-espace-souls-like-science-fiction.html</guid>
+    <pubDate>Mon, 12 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Un croquis à l&#x27;encre, une éclipse au-dessus de la Sainte-Victoire et une question : que devient l&#x27;honneur d&#x27;un samouraï quand son soleil s&#x27;éteint ?</description>
+  </item>
+</channel>
 </rss>

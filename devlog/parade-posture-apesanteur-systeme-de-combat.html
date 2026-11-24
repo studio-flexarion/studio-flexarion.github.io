@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le système de combat de Flexarion : parade, posture et apesanteur — Devlog 02 | Flexarion</title>
+<meta name="description" content="Fenêtres de parade, barre de posture et duels au katana en apesanteur : le studio Flexarion détaille le système de combat de son souls-like de samouraï.">
+<link rel="canonical" href="https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Flexarion">
+<meta name="theme-color" content="#08070b">
+<meta property="og:site_name" content="Flexarion">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Le système de combat de Flexarion : parade, posture et apesanteur — Devlog 02 | Flexarion">
+<meta property="og:description" content="Fenêtres de parade, barre de posture et duels au katana en apesanteur : le studio Flexarion détaille le système de combat de son souls-like de samouraï.">
+<meta property="og:url" content="https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html">
+<meta property="og:image" content="https://studio-flexarion.github.io/assets/img/og-devlog-02.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Deux samouraïs s&#x27;affrontent au katana en apesanteur au milieu de débris, tranchés par un arc de lumière">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Le système de combat de Flexarion : parade, posture et apesanteur — Devlog 02 | Flexarion">
+<meta name="twitter:description" content="Fenêtres de parade, barre de posture et duels au katana en apesanteur : le studio Flexarion détaille le système de combat de son souls-like de samouraï.">
+<meta name="twitter:image" content="https://studio-flexarion.github.io/assets/img/og-devlog-02.png">
+<meta property="article:published_time" content="2026-11-05">
+<meta property="article:author" content="Clément Astier">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Devlog Flexarion" href="https://studio-flexarion.github.io/devlog/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Shippori+Mincho:wght@800&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html#article","headline":"Devlog 02 — Parade, posture et apesanteur : le système de combat","description":"Fenêtres de parade, barre de posture et duels au katana en apesanteur : le studio Flexarion détaille le système de combat de son souls-like de samouraï.","image":"https://studio-flexarion.github.io/assets/img/og-devlog-02.png","datePublished":"2026-11-05","dateModified":"2026-11-05","inLanguage":"fr-FR","wordCount":588,"keywords":"Flexarion, souls-like, science-fiction, Game design, Programmation","isPartOf":{"@id":"https://studio-flexarion.github.io/devlog/#blog"},"mainEntityOfPage":"https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html","author":{"@type":"Person","name":"Clément Astier","jobTitle":"Game design","worksFor":{"@id":"https://studio-flexarion.github.io/#organisation"}},"publisher":{"@id":"https://studio-flexarion.github.io/#organisation"},"about":{"@id":"https://studio-flexarion.github.io/jeu.html#jeu"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://studio-flexarion.github.io/"},{"@type":"ListItem","position":2,"name":"Devlog","item":"https://studio-flexarion.github.io/devlog/index.html"},{"@type":"ListItem","position":3,"name":"Devlog 02","item":"https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html"}]}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="entete">
+  <div class="container entete__in">
+    <a class="marque" href="../index.html" aria-label="Flexarion, retour à l'accueil">
+      <img src="../assets/img/flexarion-logo.svg" alt="" width="40" height="40"><span>FLEXARION</span>
+    </a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu"><span></span><b class="sr-only">Menu</b></button>
+    <nav class="nav" id="menu" aria-label="Navigation principale"><ul><li><a href="../index.html">Accueil</a></li><li><a href="../jeu.html">Le jeu</a></li><li><a href="../studio.html">Le studio</a></li><li><a href="../devlog/index.html" aria-current="page">Devlog</a></li><li><a href="../contact.html">Contact &amp; presse</a></li></ul></nav>
+  </div>
+</header>
+<main id="contenu">
+
+<article>
+  <header class="heros-page" style="padding-bottom:50px">
+    <span class="heros-page__kanji" aria-hidden="true">刀</span>
+    <div class="container--etroit">
+      <nav class="ariane revele" aria-label="Fil d'Ariane"><ol><li><a href="../index.html">Accueil</a></li><li><a href="../devlog/index.html">Devlog</a></li><li aria-current="page">Devlog 02</li></ol></nav>
+      <p class="meta revele"><span>Devlog 02</span><span>Game design · Programmation</span></p>
+      <h1 class="revele" style="font-size:clamp(1.9rem,4.4vw,3.1rem)">Devlog 02 — Parade, posture et apesanteur : le système de combat</h1>
+      <p class="chapeau revele">Dix images pour parer, une barre de posture à briser et des combats sans sol ni plafond : comment nous avons conçu les duels au katana de Flexarion.</p>
+      <p class="meta revele"><span>Par <a href="../studio.html#equipe">Clément Astier</a></span><time datetime="2026-11-05">5 novembre 2026</time><span>7 min de lecture</span></p>
+    </div>
+  </header>
+  <div class="container" style="max-width:1000px;margin-top:50px">
+    <figure class="cadre revele-encre"><div class="cadre__img"><img src="../assets/img/flexarion-duel-apesanteur-katana.svg" alt="Deux samouraïs s&#x27;affrontent au katana en apesanteur au milieu de débris, tranchés par un arc de lumière" width="1200" height="700" fetchpriority="high"></div></figure>
+  </div>
+  <div class="container--etroit prose" style="margin-top:50px">
+<p>Flexarion est un jeu de duels. Pas de fusil, pas de vaisseau à piloter : un ronin, une lame et des adversaires qui en savent souvent plus que vous. Tout le jeu repose donc sur une question : <strong>qu'est-ce qui rend un coup de katana satisfaisant ?</strong> Après huit mois de prototypes, voici notre réponse.</p>
+
+<h2>La parade parfaite : la « Contre-lune »</h2>
+<p>Lever sa garde au bon moment ne protège pas seulement : cela renvoie l'énergie du coup vers l'attaquant. Nous appelons cette parade parfaite la <strong>Contre-lune</strong>, en référence à l'arc de lumière qu'elle dessine.</p>
+<p>La fenêtre est volontairement courte, mais pas cruelle : <strong>10 images à 60 images par seconde</strong>, soit environ 167 millisecondes. En dessous de 8 images, nos testeurs avaient l'impression de jouer à la loterie ; au-dessus de 12, la parade devenait automatique.</p>
+<div class="tableau"><table>
+  <thead><tr><th scope="col">Action</th><th scope="col">Fenêtre</th><th scope="col">Effet</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Contre-lune (parade parfaite)</th><td>10 images (~167 ms)</td><td>Aucun dégât, forte perte de posture pour l'ennemi</td></tr>
+    <tr><th scope="row">Garde simple</th><td>Maintenue</td><td>Dégâts réduits, mais votre posture baisse</td></tr>
+    <tr><th scope="row">Pas du Vide (esquive)</th><td>14 images d'invulnérabilité</td><td>Repositionnement, coûte de l'endurance</td></tr>
+    <tr><th scope="row">Coup de l'Éclipse</th><td>Posture ennemie brisée</td><td>Coup fatal ou très lourds dégâts sur un boss</td></tr>
+  </tbody>
+  <caption>Les fenêtres de combat de Flexarion, version de novembre 2026.</caption>
+</table></div>
+
+<h2>La posture : briser la garde plutôt que la vie</h2>
+<p>Chaque combattant a une barre de vie et une <strong>barre de posture</strong>. Les parades parfaites, les coups lourds et les attaques dans le dos remplissent la posture adverse. Quand elle est pleine, la garde se brise et vous pouvez porter le <strong>Coup de l'Éclipse</strong>.</p>
+<p>Dans le moteur, la résolution d'un coup reçu tient en quelques lignes :</p>
+<pre><code><span class="c">// Résolution d'une attaque reçue pendant la garde</span>
+<span class="k">EResultat</span> <span class="f">UComposantDuel::ResoudreCoup</span>(<span class="k">const</span> FCoup&amp; Coup)
+{
+    <span class="k">const float</span> Delai = Coup.InstantImpact - InstantDebutGarde;
+    <span class="k">if</span> (Delai &gt;= <span class="n">0.f</span> &amp;&amp; Delai &lt;= FenetreContreLune)   <span class="c">// 10 images à 60 i/s</span>
+    {
+        Coup.Attaquant-&gt;AjouterPosture(Coup.Degats * <span class="n">1.5f</span>);
+        <span class="k">return</span> EResultat::ContreLune;
+    }
+    Posture += Coup.Degats * <span class="n">0.6f</span>;                     <span class="c">// la garde simple use votre posture</span>
+    <span class="k">return</span> Posture &gt;= PostureMax ? EResultat::GardeBrisee : EResultat::Bloque;
+}</code></pre>
+<p>Le détail important est le multiplicateur de 1,5 : une parade parfaite fait plus mal à la posture de l'ennemi que la plupart de vos attaques. Le jeu récompense la lecture de l'adversaire, pas l'agressivité.</p>
+
+<h2>Se battre sans sol : l'apesanteur</h2>
+<p>Plusieurs zones de Flexarion se déroulent dans le vide, entre les débris des châteaux orbitaux. Notre premier prototype de combat en apesanteur était injouable : les joueurs perdaient leurs repères en quelques secondes.</p>
+<p>La solution est venue d'une règle simple : <strong>le ronin s'oriente toujours vers son adversaire</strong>. Le « haut » de l'écran devient la direction de la tête du personnage, et le verrouillage de cible garde l'ennemi au centre. Le joueur peut ensuite utiliser le <strong>Pas du Vide</strong> pour se propulser d'un débris à l'autre, et frapper depuis n'importe quel angle.</p>
+<blockquote>« Dans le vide, il n'y a ni haut ni bas. Il n'y a que toi, et celui que tu dois vaincre. »</blockquote>
+
+<h2>Difficile, mais jamais injuste</h2>
+<p>Flexarion est exigeant, et nous l'assumons. Mais nous avons fixé trois règles :</p>
+<ul>
+  <li>chaque attaque ennemie dangereuse est annoncée par un signal visuel <strong>et</strong> sonore ;</li>
+  <li>aucun coup ne peut vous tuer en partant d'une barre de vie pleine, sauf dans les combats facultatifs ;</li>
+  <li>des options d'accessibilité (ralentissement du jeu, fenêtres de parade élargies) sont disponibles sans pénalité.</li>
+</ul>
+
+<h2>Et ensuite ?</h2>
+<p>Dans le prochain devlog, Soraya présentera <a href="direction-artistique-encre-or-et-vide.html">la direction artistique de Flexarion</a>. Vous pouvez aussi découvrir <a href="../jeu.html#mecaniques">toutes les mécaniques du jeu</a> ou <a href="../contact.html">vous inscrire au prochain playtest</a>.</p>
+
+    <div class="auteur"><div class="sceau" aria-hidden="true" style="margin:0">刀</div><p><strong>Clément Astier</strong> · Game design<br>Membre de l'équipe <a href="../studio.html">Flexarion</a>, studio de jeux vidéo indépendant à Aix-en-Provence.</p></div>
+    <nav class="nav-billets" aria-label="Autres devlogs"><a href="un-ronin-dans-l-espace-souls-like-science-fiction.html" rel="prev"><small>← Devlog précédent</small>Un ronin dans l&#x27;espace : pourquoi un souls-like de science-fiction</a><a class="suivant" href="direction-artistique-encre-or-et-vide.html" rel="next"><small>Devlog suivant →</small>Direction artistique : l&#x27;encre, l&#x27;or et le vide</a></nav>
+  </div>
+</article>
+<section class="section--serre" style="padding:100px 0 110px">
+  <div class="container"><div class="appel revele">
+    <h2>Envie de prendre la lame ?</h2>
+    <p>Les inscriptions au prochain playtest de Flexarion sont ouvertes. Écrivez-nous, nous vous gardons une place.</p>
+    <div class="actions"><a class="btn btn--plein" href="../contact.html">Rejoindre le playtest <span class="fleche" aria-hidden="true">→</span></a><a class="btn" href="index.html">Tous les devlogs</a></div>
+  </div></div>
+</section>
+</main>
+<footer class="pied">
+  <div class="container">
+    <div class="pied__grille">
+      <div>
+        <a class="marque" href="../index.html"><img src="../assets/img/flexarion-logo.svg" alt="" width="40" height="40"><span>FLEXARION</span></a>
+        <p style="margin-top:18px"><strong>Flexarion</strong> est un studio de jeux vidéo indépendant de science-fiction, installé à Aix-en-Provence. Il développe Flexarion, un souls-like où l'on incarne un ronin dans l'espace.</p>
+      </div>
+      <nav aria-label="Plan du site">
+        <h2>Explorer</h2>
+        <ul><li><a href="../jeu.html">Le jeu Flexarion</a></li><li><a href="../studio.html">Le studio</a></li><li><a href="../devlog/index.html">Devlog</a></li><li><a href="../contact.html">Contact &amp; presse</a></li></ul>
+      </nav>
+      <nav aria-label="Le jeu">
+        <h2>Le jeu</h2>
+        <ul><li><a href="../jeu.html#univers">L'univers</a></li><li><a href="../jeu.html#mecaniques">Le combat</a></li><li><a href="../jeu.html#daimyos">Les Sept Daimyō</a></li><li><a href="../jeu.html#faq">FAQ du jeu</a></li></ul>
+      </nav>
+      <div>
+        <h2>Le studio</h2>
+        <address>Flexarion<br>13100 Aix-en-Provence<br>Provence, France<br><a href="mailto:flexarioncontact@gmail.com">flexarioncontact@gmail.com</a></address>
+        <ul style="margin-top:14px"><li><a href="../devlog/feed.xml">Flux RSS du devlog</a></li></ul>
+      </div>
+    </div>
+    <div class="pied__bas">
+      <span>© 2026 Flexarion — studio fictif imaginé pour un projet du BUT Informatique d'Aix-en-Provence.</span>
+      <a href="../mentions-legales.html">Mentions légales</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
