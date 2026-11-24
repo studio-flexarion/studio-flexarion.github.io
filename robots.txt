@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://el-mestari-aymen-24005190.github.io/Projet-Flexarion/sitemap.xml
+Sitemap: https://studio-flexarion.github.io/sitemap.xml

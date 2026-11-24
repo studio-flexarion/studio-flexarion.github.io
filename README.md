@@ -39,11 +39,11 @@ flexarion/
 
 ## À faire avant la mise en ligne
 
-1. ~~Remplacer le domaine provisoire~~ : fait. Le site utilise `https://el-mestari-aymen-24005190.github.io/Projet-Flexarion` et l'adresse `flexarioncontact@gmail.com`.
+1. ~~Remplacer le domaine provisoire~~ : fait. Le site utilise `https://studio-flexarion.github.io` et l'adresse `flexarioncontact@gmail.com`.
 2. ~~Compléter les mentions légales~~ : fait.
 3. **Formulaire de contact.** Il ouvre la messagerie du visiteur (`mailto:`). Pour un envoi direct, brancher un service
    de formulaires (Formspree, Netlify Forms…) dans le bloc 7 de `assets/js/main.js`.
-4. ~~Hébergement dans un sous-dossier~~ : fait. Les chemins de `404.html` commencent par `/Projet-Flexarion/`.
+4. Le site est servi à la racine de https://studio-flexarion.github.io (organisation GitHub « studio-flexarion », dépôt « studio-flexarion.github.io »). L'ancienne adresse redirige vers la nouvelle.
 
 ## Après la mise en ligne
 
