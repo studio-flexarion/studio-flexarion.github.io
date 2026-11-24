@@ -24,7 +24,7 @@
 <meta name="twitter:description" content="Fenêtres de parade, barre de posture et duels au katana en apesanteur : le studio Flexarion détaille le système de combat de son souls-like de samouraï.">
 <meta name="twitter:image" content="https://studio-flexarion.github.io/assets/img/og-devlog-02.png">
 <meta property="article:published_time" content="2026-11-05">
-<meta property="article:author" content="Clément Astier">
+<meta property="article:author" content="Wanis Said Boutabouzi">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -35,7 +35,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Shippori+Mincho:wght@800&amp;display=swap">
 <link rel="stylesheet" href="../assets/css/style.css">
 <script>document.documentElement.classList.add("js")</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html#article","headline":"Devlog 02 — Parade, posture et apesanteur : le système de combat","description":"Fenêtres de parade, barre de posture et duels au katana en apesanteur : le studio Flexarion détaille le système de combat de son souls-like de samouraï.","image":"https://studio-flexarion.github.io/assets/img/og-devlog-02.png","datePublished":"2026-11-05","dateModified":"2026-11-05","inLanguage":"fr-FR","wordCount":600,"keywords":"Flexarion, Ronin of the Black Sun, souls-like, science-fiction, Game design, Programmation","isPartOf":{"@id":"https://studio-flexarion.github.io/devlog/#blog"},"mainEntityOfPage":"https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html","author":{"@type":"Person","name":"Clément Astier","jobTitle":"Game design","worksFor":{"@id":"https://studio-flexarion.github.io/#organisation"}},"publisher":{"@id":"https://studio-flexarion.github.io/#organisation"},"about":{"@id":"https://studio-flexarion.github.io/jeu.html#jeu"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://studio-flexarion.github.io/"},{"@type":"ListItem","position":2,"name":"Devlog","item":"https://studio-flexarion.github.io/devlog/index.html"},{"@type":"ListItem","position":3,"name":"Devlog 02","item":"https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html#article","headline":"Devlog 02 — Parade, posture et apesanteur : le système de combat","description":"Fenêtres de parade, barre de posture et duels au katana en apesanteur : le studio Flexarion détaille le système de combat de son souls-like de samouraï.","image":"https://studio-flexarion.github.io/assets/img/og-devlog-02.png","datePublished":"2026-11-05","dateModified":"2026-11-05","inLanguage":"fr-FR","wordCount":600,"keywords":"Flexarion, Ronin of the Black Sun, souls-like, science-fiction, Game design, Programmation","isPartOf":{"@id":"https://studio-flexarion.github.io/devlog/#blog"},"mainEntityOfPage":"https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html","author":{"@type":"Person","name":"Wanis Said Boutabouzi","jobTitle":"Programmation & système de combat","worksFor":{"@id":"https://studio-flexarion.github.io/#organisation"}},"publisher":{"@id":"https://studio-flexarion.github.io/#organisation"},"about":{"@id":"https://studio-flexarion.github.io/jeu.html#jeu"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://studio-flexarion.github.io/"},{"@type":"ListItem","position":2,"name":"Devlog","item":"https://studio-flexarion.github.io/devlog/index.html"},{"@type":"ListItem","position":3,"name":"Devlog 02","item":"https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html"}]}]}</script>
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -52,13 +52,13 @@
 
 <article>
   <header class="heros-page" style="padding-bottom:50px">
-    <span class="heros-page__kanji" aria-hidden="true">刀</span>
+    <span class="heros-page__kanji" aria-hidden="true">剣</span>
     <div class="container--etroit">
       <nav class="ariane revele" aria-label="Fil d'Ariane"><ol><li><a href="../index.html">Accueil</a></li><li><a href="../devlog/index.html">Devlog</a></li><li aria-current="page">Devlog 02</li></ol></nav>
       <p class="meta revele"><span>Devlog 02</span><span>Game design · Programmation</span></p>
       <h1 class="revele" style="font-size:clamp(1.9rem,4.4vw,3.1rem)">Devlog 02 — Parade, posture et apesanteur : le système de combat</h1>
       <p class="chapeau revele">Dix images pour parer, une barre de posture à briser et des combats sans sol ni plafond : comment nous avons conçu les duels au katana de Ronin of the Black Sun.</p>
-      <p class="meta revele"><span>Par <a href="../studio.html#equipe">Clément Astier</a></span><time datetime="2026-11-05">5 novembre 2026</time><span>7 min de lecture</span></p>
+      <p class="meta revele"><span>Par <a href="../studio.html#equipe">Wanis Said Boutabouzi</a></span><time datetime="2026-11-05">5 novembre 2026</time><span>7 min de lecture</span></p>
     </div>
   </header>
   <div class="container" style="max-width:1000px;margin-top:50px">
@@ -112,9 +112,9 @@
 </ul>
 
 <h2>Et ensuite ?</h2>
-<p>Dans le prochain devlog, Soraya présentera <a href="direction-artistique-encre-or-et-vide.html">la direction artistique du jeu</a>. Vous pouvez aussi découvrir <a href="../jeu.html#mecaniques">toutes les mécaniques du jeu</a> ou <a href="../contact.html">vous inscrire au prochain playtest</a>.</p>
+<p>Dans le prochain devlog, Rayan présentera <a href="direction-artistique-encre-or-et-vide.html">la direction artistique du jeu</a>. Vous pouvez aussi découvrir <a href="../jeu.html#mecaniques">toutes les mécaniques du jeu</a> ou <a href="../contact.html">vous inscrire au prochain playtest</a>.</p>
 
-    <div class="auteur"><div class="sceau" aria-hidden="true" style="margin:0">刀</div><p><strong>Clément Astier</strong> · Game design<br>Membre de l'équipe <a href="../studio.html">Flexarion</a>, studio de jeux vidéo indépendant à Aix-en-Provence.</p></div>
+    <div class="auteur"><div class="sceau" aria-hidden="true" style="margin:0">剣</div><p><strong>Wanis Said Boutabouzi</strong> · Programmation &amp; système de combat<br>Membre de l'équipe <a href="../studio.html">Flexarion</a>, studio de jeux vidéo indépendant à Aix-en-Provence.</p></div>
     <nav class="nav-billets" aria-label="Autres devlogs"><a href="un-ronin-dans-l-espace-souls-like-science-fiction.html" rel="prev"><small>← Devlog précédent</small>Un ronin dans l&#x27;espace : pourquoi un souls-like de science-fiction</a><a class="suivant" href="direction-artistique-encre-or-et-vide.html" rel="next"><small>Devlog suivant →</small>Direction artistique : l&#x27;encre, l&#x27;or et le vide</a></nav>
   </div>
 </article>

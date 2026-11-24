@@ -27,23 +27,17 @@ SOCIALS = [
 ]
 
 TEAM = [
-    ("麻", "Maëlle Roux", "Cofondatrice · Direction créative",
-     "Ancienne illustratrice, elle écrit l'univers de Ronin of the Black Sun et sa mythologie du Soleil Noir. Elle dessine encore chaque Daimyō à l'encre avant qu'il ne passe en 3D.",
+    ("夢", "Jean Damez", "Cofondateur · Direction créative & game design",
+     "Il a dessiné le premier ronin à l'encre et écrit la mythologie du Soleil Noir. Il règle aussi chaque fenêtre de parade pour que la mort soit toujours méritée.",
      "devlog/un-ronin-dans-l-espace-souls-like-science-fiction.html"),
-    ("義", "Idriss Benhamou", "Cofondateur · Programmation",
-     "Architecte du système de combat et de l'apesanteur. Refuse de livrer une attaque qui ne répond pas en moins de cent millisecondes.",
+    ("剣", "Wanis Said Boutabouzi", "Cofondateur · Programmation & système de combat",
+     "Architecte du système de combat et de l'apesanteur. Il refuse de livrer une attaque qui ne répond pas en moins de cent millisecondes.",
      "devlog/parade-posture-apesanteur-systeme-de-combat.html"),
-    ("刀", "Clément Astier", "Cofondateur · Game design",
-     "Pratiquant de kendo depuis l'adolescence, il règle chaque parade et chaque fenêtre d'esquive pour que la mort soit toujours méritée.",
-     "devlog/parade-posture-apesanteur-systeme-de-combat.html"),
-    ("墨", "Soraya Khelifi", "Direction artistique",
-     "Elle a imposé l'encre, l'or et le vermillon. Peint les décors du jeu comme on peint un ensō : d'un seul geste, ou pas du tout.",
+    ("墨", "Rayan Keokham", "Cofondateur · Direction artistique & 3D",
+     "Il a imposé l'encre, l'or et le vermillon. Il peint les décors du jeu comme on trace un ensō : d'un seul geste, ou pas du tout.",
      "devlog/direction-artistique-encre-or-et-vide.html"),
-    ("音", "Théo Vannier", "Musique · Design sonore",
-     "Mêle shakuhachi, taiko et synthétiseurs modulaires. Il a enregistré le choc des lames dans une forge de la vallée de l'Arc.",
-     None),
-    ("道", "Lina Marchetti", "Production · Relations presse",
-     "Garde le cap du planning sans jamais faire crunch l'équipe. Votre interlocutrice pour la presse, les partenariats et les playtests.",
+    ("道", "Aymen El Mestari", "Cofondateur · Production, son & communication",
+     "Il garde le cap du planning sans jamais faire crunch l'équipe, compose l'ambiance sonore (shakuhachi, taiko et synthétiseurs) et répond à la presse.",
      None),
 ]
 
@@ -65,7 +59,7 @@ POSTS = [
         "title": "Direction artistique de Ronin of the Black Sun : l'encre, l'or et le vide — Devlog 03",
         "description": "Comment le studio Flexarion a créé la direction artistique de son souls-like de science-fiction : palette encre et braise, silhouettes de samouraïs et soleil noir.",
         "chapo": "Six couleurs, des silhouettes lisibles à dix mètres et un soleil qui ne brille plus : les règles qui donnent son identité visuelle à Ronin of the Black Sun.",
-        "auteur": "Soraya Khelifi", "role": "Direction artistique", "sceau": "墨",
+        "auteur": "Rayan Keokham", "role": "Direction artistique & 3D", "sceau": "墨",
         "image": "flexarion-palette-encre-et-braise.svg", "w": 1200, "h": 630,
         "alt": "La palette encre et braise de Ronin of the Black Sun : six bandes de couleur à côté d'un ensō peint à l'encre et d'un ronin",
         "minutes": 6, "tags": ["Direction artistique", "Univers"],
@@ -103,7 +97,7 @@ POSTS = [
 <ul>
   <li><strong>Le bleu néon</strong> : trop associé à la science-fiction « cyberpunk », il effaçait le côté japonais ancien.</li>
   <li><strong>Les casques fermés pour le héros</strong> : le chapeau de paille du ronin raconte mieux sa solitude qu'une visière.</li>
-  <li><strong>Le photoréalisme</strong> : hors de portée pour une équipe de six, et contraire à l'idée d'estampe.</li>
+  <li><strong>Le photoréalisme</strong> : hors de portée pour une équipe de quatre, et contraire à l'idée d'estampe.</li>
 </ul>
 
 <h2>Et ensuite ?</h2>
@@ -117,7 +111,7 @@ POSTS = [
         "title": "Le système de combat de Ronin of the Black Sun : parade, posture et apesanteur — Devlog 02",
         "description": "Fenêtres de parade, barre de posture et duels au katana en apesanteur : le studio Flexarion détaille le système de combat de son souls-like de samouraï.",
         "chapo": "Dix images pour parer, une barre de posture à briser et des combats sans sol ni plafond : comment nous avons conçu les duels au katana de Ronin of the Black Sun.",
-        "auteur": "Clément Astier", "role": "Game design", "sceau": "刀",
+        "auteur": "Wanis Said Boutabouzi", "role": "Programmation & système de combat", "sceau": "剣",
         "image": "flexarion-duel-apesanteur-katana.svg", "w": 1200, "h": 700,
         "alt": "Deux samouraïs s'affrontent au katana en apesanteur au milieu de débris, tranchés par un arc de lumière",
         "minutes": 7, "tags": ["Game design", "Programmation"],
@@ -169,7 +163,7 @@ POSTS = [
 </ul>
 
 <h2>Et ensuite ?</h2>
-<p>Dans le prochain devlog, Soraya présentera <a href="direction-artistique-encre-or-et-vide.html">la direction artistique du jeu</a>. Vous pouvez aussi découvrir <a href="../jeu.html#mecaniques">toutes les mécaniques du jeu</a> ou <a href="../contact.html">vous inscrire au prochain playtest</a>.</p>
+<p>Dans le prochain devlog, Rayan présentera <a href="direction-artistique-encre-or-et-vide.html">la direction artistique du jeu</a>. Vous pouvez aussi découvrir <a href="../jeu.html#mecaniques">toutes les mécaniques du jeu</a> ou <a href="../contact.html">vous inscrire au prochain playtest</a>.</p>
 """,
     },
     {
@@ -179,7 +173,7 @@ POSTS = [
         "title": "Un ronin dans l'espace : pourquoi Flexarion fait un souls-like de science-fiction — Devlog 01",
         "description": "Premier devlog du studio Flexarion : pourquoi une équipe d'Aix-en-Provence a choisi de faire un souls-like de science-fiction où l'on incarne un ronin.",
         "chapo": "Un croquis à l'encre, une éclipse au-dessus de la Sainte-Victoire et une question : que devient l'honneur d'un samouraï quand son soleil s'éteint ?",
-        "auteur": "Maëlle Roux", "role": "Direction créative", "sceau": "麻",
+        "auteur": "Jean Damez", "role": "Direction créative & game design", "sceau": "夢",
         "image": "flexarion-ronin-soleil-noir.svg", "w": 1600, "h": 900,
         "alt": "Un ronin au chapeau de paille, katana à la main, face à une éclipse dorée et à un torii brisé",
         "minutes": 6, "tags": ["Studio", "Univers"],
@@ -187,7 +181,7 @@ POSTS = [
 <p>Bienvenue dans le premier devlog de <strong>Flexarion</strong> ! Chaque mois, l'équipe racontera ici la fabrication de notre jeu, <em>Ronin of the Black Sun</em>, avec ses réussites, ses impasses et ses chiffres. Pour commencer, il fallait répondre à la question qu'on nous pose le plus souvent : <em>pourquoi un samouraï dans l'espace ?</em></p>
 
 <h2>Tout est parti d'un croquis</h2>
-<p>Pendant une game jam à Aix-en-Provence, sur le thème « l'honneur », j'ai dessiné à l'encre un ronin de dos, face à un soleil éclipsé. Pas de décor, pas d'époque : juste un chapeau de paille, une lame et un disque noir cerclé d'or. Idriss a regardé le dessin et a dit : « Et si ce soleil était une étoile morte, et que le shogun l'avait éteinte lui-même ? » <em>Ronin of the Black Sun</em> venait de naître.</p>
+<p>Tout a commencé par un projet de groupe à l'<strong>IUT d'Aix-en-Provence</strong>, où nous étions tous les quatre étudiants en informatique. Le sujet était libre ; nous avons choisi « l'honneur ». Pour la première maquette, j'ai dessiné à l'encre un ronin de dos, face à un soleil éclipsé. Pas de décor, pas d'époque : juste un chapeau de paille, une lame et un disque noir cerclé d'or. Wanis a regardé le dessin et a dit : « Et si ce soleil était une étoile morte, et que le shogun l'avait éteinte lui-même ? » <em>Ronin of the Black Sun</em> venait de naître.</p>
 
 <h2>Pourquoi un souls-like ?</h2>
 <p>Parce que le genre raconte exactement ce que vit un ronin : la solitude, l'échec répété, et la maîtrise qui vient lentement. Dans un souls-like, mourir n'est pas une punition, c'est une leçon. Chaque duel perdu vous apprend quelque chose sur votre adversaire, et sur vous-même.</p>
@@ -242,7 +236,7 @@ ORGANISATION = {
     "slogan": "Plier sans rompre.", "foundingDate": "2023", "email": EMAIL,
     "address": {"@type": "PostalAddress", "addressLocality": "Aix-en-Provence", "postalCode": "13100",
                 "addressRegion": "Provence-Alpes-Côte d'Azur", "addressCountry": "FR"},
-    "areaServed": "FR", "numberOfEmployees": {"@type": "QuantitativeValue", "value": 6},
+    "areaServed": "FR", "numberOfEmployees": {"@type": "QuantitativeValue", "value": 4},
     "knowsAbout": ["Jeu vidéo indépendant", "Science-fiction", "Souls-like", "Action-RPG", "Game design"],
     "sameAs": [u for _, u in socials()],
 }
@@ -425,6 +419,7 @@ def accueil():
         ("Quel jeu développe le studio Flexarion ?", "Flexarion développe Ronin of the Black Sun, un action-RPG exigeant de type souls-like. On y combat au katana, avec un système de parade et de posture, y compris dans des zones en apesanteur. <a href=\"jeu.html\">Découvrir le jeu</a>."),
         ("Où se trouve le studio Flexarion ?", "Le studio Flexarion est installé à Aix-en-Provence (13100), dans les Bouches-du-Rhône, en Provence-Alpes-Côte d'Azur, dans un ancien atelier d'imprimeur près du cours Mirabeau."),
         ("Quand sortira Ronin of the Black Sun ?", "Une démo jouable est prévue au printemps 2027, suivie d'un accès anticipé sur PC (Windows, Steam Deck visé) à la fin de l'année 2027."),
+        ("Comment est née l'idée de Ronin of the Black Sun ?", "L'idée est née d'un projet de groupe à l'IUT d'Aix-en-Provence, où les quatre fondateurs de Flexarion étudiaient l'informatique. Un croquis à l'encre, un ronin face à un soleil éclipsé, est devenu le point de départ du jeu. <a href=\"devlog/un-ronin-dans-l-espace-souls-like-science-fiction.html\">Lire le premier devlog</a>."),
         ("D'où vient le nom Flexarion ?", "« Flex » vient du latin <em>flectere</em>, fléchir : comme l'acier d'un katana, replié des dizaines de fois, qui plie sans rompre. « Arion » est le poète grec sauvé des flots par un dauphin charmé par son chant. <a href=\"studio.html\">Lire l'histoire du studio</a>."),
         ("Comment suivre le développement de Flexarion ?", "L'équipe publie chaque mois un devlog sur les coulisses du jeu. Vous pouvez aussi vous abonner au flux RSS ou écrire au studio pour rejoindre les playtests. <a href=\"devlog/index.html\">Lire le devlog</a>."),
     ]
@@ -504,7 +499,7 @@ def accueil():
   <div class="container">
     <dl class="chiffres revele">
       <div><dt>année de fondation du studio, à Aix-en-Provence</dt><dd data-compteur="2023">2023</dd></div>
-      <div><dt>artisans du jeu vidéo à plein temps</dt><dd data-compteur="6">6</dd></div>
+      <div><dt>développeurs dans l'équipe</dt><dd data-compteur="4">4</dd></div>
       <div><dt>Daimyō du Vide à affronter</dt><dd data-compteur="7">7</dd></div>
       <div><dt>fins possibles selon votre code d'honneur</dt><dd data-compteur="3">3</dd></div>
     </dl>
@@ -519,7 +514,7 @@ def accueil():
       {etiquette("肆", "Le studio")}
       <h2 class="revele" id="t-studio">Flexarion, studio de jeux vidéo indépendant à Aix-en-Provence</h2>
       {ornement()}
-      <p class="revele"><strong>Flexarion</strong> est un studio indé de six personnes fondé en 2023 à Aix-en-Provence. Nous faisons des jeux de science-fiction exigeants et beaux, à taille humaine, sans crunch et en racontant notre travail en toute transparence.</p>
+      <p class="revele"><strong>Flexarion</strong> est un studio indé de quatre développeurs fondé en 2023 à Aix-en-Provence. Nous faisons des jeux de science-fiction exigeants et beaux, à taille humaine, sans crunch et en racontant notre travail en toute transparence.</p>
       <p class="revele">Notre premier jeu, <a href="jeu.html">Ronin of the Black Sun</a>, porte notre devise : comme l'acier d'un katana, plier sans jamais rompre.</p>
       <div class="actions revele"><a class="btn" href="studio.html">Rencontrer l'équipe <span class="fleche" aria-hidden="true">→</span></a></div>
     </div>
@@ -572,7 +567,7 @@ def accueil():
 def jeu():
     crumbs = [("Accueil", ""), ("Le jeu", "jeu.html")]
     faq = [
-        ("Qui développe Ronin of the Black Sun ?", "Ronin of the Black Sun est développé par Flexarion, un studio de jeux vidéo indépendant de six personnes basé à Aix-en-Provence."),
+        ("Qui développe Ronin of the Black Sun ?", "Ronin of the Black Sun est développé par Flexarion, un studio de jeux vidéo indépendant de quatre personnes basé à Aix-en-Provence."),
         ("Ronin of the Black Sun est-il un souls-like ?", "Oui. C'est un action-RPG exigeant : les combats demandent d'observer l'adversaire, de parer au bon moment et d'apprendre de ses morts. Des options d'accessibilité permettent d'ajuster la difficulté sans pénalité."),
         ("Sur quelles plateformes pourra-t-on jouer à Ronin of the Black Sun ?", "D'abord sur PC (Windows), avec la compatibilité Steam Deck en ligne de mire. Des versions consoles sont à l'étude pour la version 1.0."),
         ("Quand sortira Ronin of the Black Sun ?", "Une démo est prévue au printemps 2027, puis un accès anticipé sur PC à la fin de l'année 2027. Les dates précises seront annoncées dans le devlog."),
@@ -759,7 +754,7 @@ def studio():
         f'<article class="carte membre revele" style="--delai:{(i % 3) * .1:.1f}s"><div class="sceau" aria-hidden="true">{k}</div><h3>{escape(n)}</h3><span class="role">{escape(r)}</span><p>{escape(b)}{lien(l)}</p></article>'
         for i, (k, n, r, b, l) in enumerate(TEAM))
     org = dict(ORGANISATION)
-    org["founder"] = [{"@type": "Person", "name": n, "jobTitle": r} for _, n, r, _, _ in TEAM[:3]]
+    org["founder"] = [{"@type": "Person", "name": n, "jobTitle": r} for _, n, r, _, _ in TEAM]
     org["member"] = [{"@type": "Person", "name": n, "jobTitle": r} for _, n, r, _, _ in TEAM]
     about = {"@type": "AboutPage", "@id": url("studio.html#page"), "url": url("studio.html"), "name": "Le studio Flexarion", "about": {"@id": ORG_ID}}
     corps = f'''
@@ -769,7 +764,7 @@ def studio():
     {ariane(crumbs, "")}
     <p class="heros__sur revele">Studio indépendant · fondé en 2023 · Aix-en-Provence</p>
     <h1 class="revele" id="titre">Le studio Flexarion : des jeux de science-fiction forgés à Aix-en-Provence</h1>
-    <p class="chapeau revele">Six artisans du jeu vidéo, un ancien atelier d'imprimeur près du cours Mirabeau et une conviction : on peut raconter les étoiles, et les samouraïs, depuis la Provence.</p>
+    <p class="chapeau revele">Quatre développeurs, un ancien atelier d'imprimeur près du cours Mirabeau et une conviction : on peut raconter les étoiles, et les samouraïs, depuis la Provence.</p>
   </div>
 </section>
 
@@ -777,16 +772,16 @@ def studio():
   <div class="container duo" style="align-items:start">
     <div>
       {etiquette("壱", "Notre histoire")}
-      <h2 class="revele" id="t-histoire">D'une game jam à un studio de six personnes</h2>
+      <h2 class="revele" id="t-histoire">D'un projet à l'IUT d'Aix à un studio de quatre développeurs</h2>
       {ornement()}
-      <p class="revele">Flexarion n'est pas né dans un garage, mais dans une salle de cours surchauffée d'Aix-en-Provence, un week-end de juin. Trois étudiants, quarante-huit heures, un thème imposé, « l'honneur », et un croquis à l'encre qui ne les a plus quittés.</p>
-      <blockquote class="citation revele" style="text-align:left;margin-top:40px"><p>Plier sans rompre : c'est le katana, et c'est tout le programme du studio.</p><cite>— Maëlle Roux, directrice créative</cite></blockquote>
+      <p class="revele">Flexarion n'est pas né dans un garage, mais dans une salle de projet de l'<strong>IUT d'Aix-en-Provence</strong>. Quatre étudiants en informatique, un projet de groupe, un thème choisi, « l'honneur », et un croquis à l'encre qui ne les a plus quittés : un ronin face à un soleil éclipsé.</p>
+      <blockquote class="citation revele" style="text-align:left;margin-top:40px"><p>Plier sans rompre : c'est le katana, et c'est tout le programme du studio.</p><cite>— Jean Damez, directeur créatif</cite></blockquote>
     </div>
     <ol class="frise revele">
-      <li><span class="annee">2021</span><h3>Une game jam, trois inconnus</h3><p>Maëlle, Idriss et Clément se rencontrent et créent un duel de samouraïs face à une éclipse.</p></li>
-      <li><span class="annee">2023</span><h3>Naissance de Flexarion</h3><p>Diplômes en poche, ils fondent le studio à Aix-en-Provence, dans un ancien atelier d'imprimeur.</p></li>
+      <li><span class="annee">2022</span><h3>Un projet à l'IUT d'Aix</h3><p>Jean, Wanis, Rayan et Aymen se rencontrent à l'IUT d'Aix-en-Provence. Leur projet de groupe met en scène un duel de samouraïs face à une éclipse : l'idée du jeu est née.</p></li>
+      <li><span class="annee">2023</span><h3>Naissance de Flexarion</h3><p>Le projet devient une ambition : ils fondent le studio à Aix-en-Provence, dans un ancien atelier d'imprimeur.</p></li>
       <li><span class="annee">2024</span><h3>Le prototype « Lame-Lune »</h3><p>Un an de recherche sur la parade parfaite, testé dans les bars à jeux du pays d'Aix.</p></li>
-      <li><span class="annee">2025</span><h3>L'équipe passe à six</h3><p>Soraya, Théo et Lina rejoignent l'aventure. Le studio adopte la semaine de quatre jours.</p></li>
+      <li><span class="annee">2025</span><h3>Premier Shiro jouable</h3><p>Le Shiro-Ferraille et sa Daimyō sont testés en interne. Le studio adopte la semaine de quatre jours.</p></li>
       <li><span class="annee">2026</span><h3>Ronin of the Black Sun se dévoile</h3><p>Le jeu est annoncé et le devlog public ouvre ses portes.</p></li>
       <li class="avenir"><span class="annee">2027</span><h3>Accès anticipé</h3><p>Prochaine étape : la démo, puis la sortie en accès anticipé sur PC.</p></li>
     </ol>
@@ -812,9 +807,9 @@ def studio():
       {etiquette("参", "L'équipe")}
       <h2 class="revele" id="t-equipe">L'équipe de Flexarion</h2>
       {ornement()}
-      <p class="revele">Six métiers, un seul atelier et une règle : chaque vendredi, tout le monde joue au jeu de tout le monde.</p>
+      <p class="revele">Quatre développeurs aux spécialités complémentaires, un seul atelier et une règle : chaque vendredi, tout le monde joue au jeu de tout le monde.</p>
     </div>
-    <div class="grille grille--3">{equipe}</div>
+    <div class="grille grille--4">{equipe}</div>
   </div>
 </section>
 
@@ -857,7 +852,7 @@ def studio():
 </section>'''
     return page("studio.html",
                 "Le studio Flexarion — Studio de jeux vidéo indépendant à Aix-en-Provence",
-                "Découvrez Flexarion, studio de jeux vidéo indépendant fondé en 2023 à Aix-en-Provence : son histoire, l'origine de son nom et l'équipe de six qui crée un souls-like de science-fiction.",
+                "Découvrez Flexarion, studio de jeux vidéo indépendant fondé en 2023 à Aix-en-Provence : son histoire, l'origine de son nom et l'équipe de quatre développeurs qui crée un souls-like de science-fiction.",
                 corps, ld(org, about, fil(crumbs)))
 
 
@@ -1001,7 +996,7 @@ def contact():
         <div class="tableau"><table class="fiche">
           <tr><th scope="row">Studio</th><td>Flexarion, studio de jeux vidéo indépendant</td></tr>
           <tr><th scope="row">Fondation</th><td>2023, Aix-en-Provence (France)</td></tr>
-          <tr><th scope="row">Équipe</th><td>6 personnes</td></tr>
+          <tr><th scope="row">Équipe</th><td>4 personnes : Jean Damez, Wanis Said Boutabouzi, Rayan Keokham, Aymen El Mestari</td></tr>
           <tr><th scope="row">Jeu</th><td><a href="jeu.html">Ronin of the Black Sun</a>, souls-like de science-fiction</td></tr>
           <tr><th scope="row">Plateforme</th><td>PC (Windows), Steam Deck visé</td></tr>
           <tr><th scope="row">Sortie</th><td>Démo printemps 2027, accès anticipé fin 2027</td></tr>
@@ -1010,7 +1005,7 @@ def contact():
         <h3 style="margin-top:36px">Présentation courte</h3>
         <p>Flexarion est un studio de jeux vidéo indépendant d'Aix-en-Provence. Son premier jeu, Ronin of the Black Sun, est un souls-like de science-fiction où l'on incarne un ronin dans un shogunat spatial.</p>
         <h3>Présentation longue</h3>
-        <p>Fondé en 2023 par trois anciens étudiants aixois, rejoints en 2025 par une directrice artistique, un compositeur et une productrice, Flexarion développe des jeux de science-fiction exigeants et esthétiques. Son premier titre, Ronin of the Black Sun, est un action-RPG souls-like : le joueur incarne Kaïen, ronin ressuscité trois siècles après la Grande Éclipse, et affronte au katana les Sept Daimyō du Vide pour libérer la lumière du Soleil Noir. Le jeu mêle duels de précision, combat en apesanteur et une direction artistique inspirée de la peinture à l'encre japonaise.</p>
+        <p>Né d'un projet étudiant à l'IUT d'Aix-en-Provence et fondé en 2023 par quatre développeurs, Flexarion développe des jeux de science-fiction exigeants et esthétiques. Son premier titre, Ronin of the Black Sun, est un action-RPG souls-like : le joueur incarne Kaïen, ronin ressuscité trois siècles après la Grande Éclipse, et affronte au katana les Sept Daimyō du Vide pour libérer la lumière du Soleil Noir. Le jeu mêle duels de précision, combat en apesanteur et une direction artistique inspirée de la peinture à l'encre japonaise.</p>
       </div>
       <div class="revele">
         <h3>Logos et visuels</h3>
