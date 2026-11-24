@@ -1,52 +1,41 @@
-# Flexarion — site du studio
+# Flexarion — site officiel
 
-Site vitrine d'un studio de jeux vidéo indépendant fictif (concours du BUT Informatique d'Aix-en-Provence).
-HTML, CSS et JavaScript natifs : aucune dépendance, aucune étape de compilation.
+Site du studio **Flexarion** (studio de jeux vidéo indépendant, Aix-en-Provence) et de son jeu **Flexarion**, un souls-like de science-fiction où l'on incarne un ronin dans l'espace.
 
-## Voir le site
+En ligne : https://studio-flexarion.github.io/
 
-Double-cliquer sur `flexarion/index.html`, ou lancer un petit serveur local :
+Projet du BUT Informatique (IUT d'Aix-Marseille) : Jean Damez, Wanis Said Boutabouzi, Rayan Keokham, Aymen El Mestari.
+
+## Organisation
+
+| Élément | Rôle |
+|---|---|
+| `_build/build.py` | Générateur : **tous les textes du site** (pages, devlogs, FAQ, équipe, Daimyō). |
+| `_build/art.py` | Génère les illustrations SVG de `assets/img/`. |
+| `assets/css/style.css` | Direction artistique « encre et braise » et animations. |
+| `assets/js/main.js` | Braises, parallaxe, apparitions, liste des Daimyō, visionneuse. |
+| `*.html`, `devlog/`, `sitemap.xml`, `robots.txt`, `devlog/feed.xml` | Fichiers générés : ne pas les modifier à la main. |
+| `googlecc9ad28a92dc6802.html` | Validation Google Search Console : **ne jamais supprimer**. |
+
+Le dossier `_build/` n'est pas publié par GitHub Pages (les dossiers commençant par `_` sont ignorés).
+
+## Modifier le site
 
 ```bash
-python -m http.server 4173 --directory flexarion
+python3 _build/build.py
 ```
 
-puis ouvrir <http://localhost:4173>.
+Puis `git add -A && git commit -m "…" && git push`. Le site est en ligne 1 à 2 minutes plus tard.
 
-## Arborescence
+- **Ajouter un devlog** : ajoutez une entrée **en tête** de la liste `POSTS` dans `_build/build.py`. Le sitemap, le flux RSS, l'accueil et la navigation se mettent à jour seuls. Pensez ensuite à créer l'image de partage `assets/img/og-devlog-NN.png`, et à demander l'indexation de la nouvelle page dans Search Console.
+- **Ajouter un réseau social** : renseignez son URL dans `SOCIALS`. Il apparaîtra dans le pied de page, la page contact et les données structurées.
+- **Régénérer les illustrations** : `python3 _build/art.py`.
 
-```
-flexarion/
-├── index.html                 Accueil
-├── studio.html                Le studio (histoire, équipe, Aix-en-Provence)
-├── maestral.html              Le jeu phare
-├── contact.html               Contact et espace presse
-├── mentions-legales.html
-├── 404.html
-├── devlog/
-│   ├── index.html             Liste des devlogs
-│   ├── simuler-le-vent-solaire.html
-│   ├── direction-artistique-science-fiction-provence.html
-│   ├── premiere-demo-maestral-bilan-playtest.html
-│   └── feed.xml               Flux RSS
-├── assets/
-│   ├── css/style.css          Feuille de style unique, commentée
-│   ├── js/main.js             Menu, animations, vent solaire, formulaire
-│   └── img/                   Illustrations SVG + images de partage
-├── sitemap.xml, robots.txt, site.webmanifest
-└── favicon.svg, icon-*.png, apple-touch-icon.png
-```
+## SEO déjà en place
 
-## À faire avant la mise en ligne
-
-1. ~~Remplacer le domaine provisoire~~ : fait. Le site utilise `https://studio-flexarion.github.io` et l'adresse `flexarioncontact@gmail.com`.
-2. ~~Compléter les mentions légales~~ : fait.
-3. **Formulaire de contact.** Il ouvre la messagerie du visiteur (`mailto:`). Pour un envoi direct, brancher un service
-   de formulaires (Formspree, Netlify Forms…) dans le bloc 7 de `assets/js/main.js`.
-4. Le site est servi à la racine de https://studio-flexarion.github.io (organisation GitHub « studio-flexarion », dépôt « studio-flexarion.github.io »). L'ancienne adresse redirige vers la nouvelle.
-
-## Après la mise en ligne
-
-- Déclarer le site dans Google Search Console et Bing Webmaster Tools, puis y soumettre `sitemap.xml`.
-- Tester une page dans le « Test des résultats enrichis » de Google et dans PageSpeed Insights.
-- Publier un nouveau devlog régulièrement : dupliquer un article, l'ajouter à `devlog/index.html`, `sitemap.xml` et `feed.xml`.
+- « Flexarion » dans chaque titre, H1, meta description et texte alternatif, de façon naturelle (pas de bourrage).
+- Mots-clés secondaires : souls-like, action-RPG, science-fiction, ronin, samouraï, studio de jeux vidéo indépendant, Aix-en-Provence.
+- Données structurées : `Organization`, `WebSite`, `VideoGame`, `FAQPage` (accueil et jeu), `Blog`, `BlogPosting`, `BreadcrumbList`, `AboutPage`, `ContactPage`.
+- Open Graph et Twitter, avec une image de partage par page.
+- Sitemap, robots.txt, flux RSS, canonical, page 404 en `noindex`.
+- Les anciennes adresses (Maestral) redirigent vers les nouvelles pages.
