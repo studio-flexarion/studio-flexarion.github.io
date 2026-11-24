@@ -22,7 +22,7 @@ TODAY = date.today().isoformat()
 # Renseignez l'URL d'un réseau dès que le compte existe : il apparaîtra sur le site
 # et dans les données structurées (sameAs).
 SOCIALS = [
-    ("Instagram", ""), ("TikTok", ""), ("X / Twitter", ""), ("YouTube", ""),
+    ("Instagram", "https://www.instagram.com/studio.flexarion/"), ("TikTok", "https://www.tiktok.com/@studio.flexarion"), ("X / Twitter", ""), ("YouTube", ""),
     ("Discord", ""), ("itch.io", ""), ("LinkedIn", ""),
 ]
 

@@ -22,7 +22,7 @@ Les visuels sont dans `visuels/`. Pour les régénérer : `python3 _communicatio
 ## 2. Profils : à remplir partout pareil
 
 - **Nom affiché** : `Flexarion` (ou `Flexarion · Ronin of the Black Sun`)
-- **Identifiant** : `@studioflexarion`, ou à défaut `@flexarion_studio` (le même partout si possible)
+- **Identifiant** : `@studio.flexarion` (déjà pris sur Instagram et TikTok, à garder identique sur les autres réseaux)
 - **Lien** : `https://studio-flexarion.github.io/`
 - **Bio courte** (Instagram, TikTok, X) :
   > Studio de jeux vidéo indé · Aix-en-Provence ☀️🌑 On développe *Ronin of the Black Sun*, un souls-like de science-fiction où vous incarnez un ronin ⚔️ Devlog 👇
