@@ -135,7 +135,10 @@ strong { color: #fff; font-weight: 600; }
 .heros .chapeau, .heros h1 .sous-titre { max-width: 680px; }
 .heros__sur { font-family: var(--police-titre); font-size: .8rem; letter-spacing: .38em; text-transform: uppercase; color: var(--or); margin-bottom: 20px; }
 .heros h1 { margin-bottom: 26px; }
-.heros h1 .titre-jeu { display: block; white-space: nowrap; font-size: clamp(2.3rem, 8.2vw, 6.6rem); font-weight: 700; letter-spacing: .12em; line-height: .95; background: linear-gradient(180deg, #fff8e6 10%, var(--or-clair) 45%, var(--or) 80%); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 30px rgba(184, 50, 42, .45)); }
+.heros h1 .titre-jeu { --grad: linear-gradient(180deg, #fff8e6 10%, var(--or-clair) 45%, var(--or) 80%); display: block; white-space: nowrap; font-size: clamp(3rem, 11vw, 8.6rem); font-weight: 700; letter-spacing: .14em; line-height: .92; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 30px rgba(184, 50, 42, .45)); }
+.heros h1 .titre-jeu > .titre-lettres { display: block; }
+.heros h1 .titre-jeu__suite { font-size: .34em; letter-spacing: .44em; margin-top: .35em; }
+.js .titre-jeu__suite .l { animation-delay: calc(var(--i) * .035s + .65s); }
 .heros h1 .sous-titre { display: block; margin-top: 18px; font-size: clamp(1.05rem, 2vw, 1.45rem); letter-spacing: .12em; color: var(--cendre); font-weight: 500; }
 .heros .chapeau { font-size: clamp(1.2rem, 1.8vw, 1.42rem); color: #d9d2c3; max-width: 620px; }
 .defiler { position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; font-family: var(--police-titre); font-size: .68rem; letter-spacing: .3em; color: var(--cendre-sourde); text-decoration: none; }
@@ -353,7 +356,7 @@ caption { caption-side: bottom; padding-top: 10px; font-size: .95rem; color: var
    entièrement masqué est considéré comme invisible par le navigateur. */
 .js .revele-encre > *:first-child { clip-path: inset(0 100% 0 0); transition: clip-path 1.6s cubic-bezier(.77, 0, .18, 1); transition-delay: var(--delai, 0s); }
 .js .revele-encre.est-vu > *:first-child { clip-path: inset(0 0 0 0); }
-.titre-lettres .l { background: inherit; -webkit-background-clip: text; background-clip: text; color: transparent; }
+.titre-lettres .l { background: var(--grad, inherit); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .js .titre-lettres .l { display: inline-block; opacity: 0; transform: translateY(.4em); filter: blur(8px); animation: lettre 1.2s var(--ease) forwards; animation-delay: calc(var(--i) * .07s + .25s); }
 /* Entrée du héros au chargement (sans attendre le défilement) */
 .js .entree { opacity: 0; animation: entree 1.2s var(--ease) forwards; animation-delay: var(--delai, 0s); }

@@ -41,7 +41,7 @@
       s.className = "l";
       s.setAttribute("aria-hidden", "true");
       s.style.setProperty("--i", i);
-      s.textContent = c;
+      s.textContent = c === " " ? " " : c; // une espace seule dans un inline-block s'effondrerait
       el.appendChild(s);
     });
   });

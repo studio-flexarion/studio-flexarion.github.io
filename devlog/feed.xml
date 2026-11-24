@@ -4,21 +4,21 @@
   <title>Devlog Flexarion</title>
   <link>https://studio-flexarion.github.io/devlog/index.html</link>
   <atom:link href="https://studio-flexarion.github.io/devlog/feed.xml" rel="self" type="application/rss+xml"/>
-  <description>Le journal de développement de Flexarion, souls-like de science-fiction du studio Flexarion (Aix-en-Provence).</description>
+  <description>Le journal de développement de Ronin of the Black Sun, souls-like de science-fiction du studio Flexarion (Aix-en-Provence).</description>
   <language>fr-FR</language>
   <item>
     <title>Devlog 03 — Direction artistique : l&#x27;encre, l&#x27;or et le vide</title>
     <link>https://studio-flexarion.github.io/devlog/direction-artistique-encre-or-et-vide.html</link>
     <guid isPermaLink="true">https://studio-flexarion.github.io/devlog/direction-artistique-encre-or-et-vide.html</guid>
     <pubDate>Tue, 24 Nov 2026 09:00:00 +0000</pubDate>
-    <description>Six couleurs, des silhouettes lisibles à dix mètres et un soleil qui ne brille plus : les règles qui donnent son identité visuelle au jeu Flexarion.</description>
+    <description>Six couleurs, des silhouettes lisibles à dix mètres et un soleil qui ne brille plus : les règles qui donnent son identité visuelle à Ronin of the Black Sun.</description>
   </item>
   <item>
     <title>Devlog 02 — Parade, posture et apesanteur : le système de combat</title>
     <link>https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html</link>
     <guid isPermaLink="true">https://studio-flexarion.github.io/devlog/parade-posture-apesanteur-systeme-de-combat.html</guid>
     <pubDate>Thu, 05 Nov 2026 09:00:00 +0000</pubDate>
-    <description>Dix images pour parer, une barre de posture à briser et des combats sans sol ni plafond : comment nous avons conçu les duels au katana de Flexarion.</description>
+    <description>Dix images pour parer, une barre de posture à briser et des combats sans sol ni plafond : comment nous avons conçu les duels au katana de Ronin of the Black Sun.</description>
   </item>
   <item>
     <title>Devlog 01 — Un ronin dans l&#x27;espace : pourquoi un souls-like de science-fiction</title>

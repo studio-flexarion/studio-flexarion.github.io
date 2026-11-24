@@ -1,6 +1,6 @@
 # Flexarion — site officiel
 
-Site du studio **Flexarion** (studio de jeux vidéo indépendant, Aix-en-Provence) et de son jeu **Flexarion**, un souls-like de science-fiction où l'on incarne un ronin dans l'espace.
+Site du studio **Flexarion** (studio de jeux vidéo indépendant, Aix-en-Provence) et de son jeu **Ronin of the Black Sun**, un souls-like de science-fiction où l'on incarne un ronin dans l'espace.
 
 En ligne : https://studio-flexarion.github.io/
 
